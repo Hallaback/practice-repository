@@ -1,0 +1,40 @@
+LoL game (switch function and prompts)
+
+var user = prompt("Welcome to Summoners Rift!  You are playing a mid APC champion. A teamfight breaks out! You can attack the ADC, SUPPORT, TANK, BRUISER, APC. Who takes kill priority?").toUpperCase();
+switch(user) {
+    case 'ADC':
+        var skill = prompt("Good choice! Are you more skillful than the ADC? (YES or NO)").toUpperCase();
+        var strong = prompt("Are you stronger than the ADC?").toUpperCase();
+        if (skill === 'YES' || strong === 'YES') {
+            console.log("You have killed their ADC and won the teamfight! Your are honored after the match!");
+        } else {
+            console.log("Oh no! You have died and your teammates are calling you a feeder! #reported!");
+        }
+    break;
+    case 'APC':
+        var skill = prompt("Good choice! Are you more skillful than the APC? (YES or NO)").toUpperCase();
+        var strong = prompt("Are you stronger than the APC?").toUpperCase();
+        if (skill === 'YES' || strong === 'YES') {
+            console.log("You have killed their APC and won the teamfight! Your teammates are calling you a Legend!");
+        } else {
+            console.log("Oh no! You have died and your teammates say to unistall the game! #worst APC!");
+        }
+    break;
+    case 'SUPPORT':
+        console.log("WTF! Why are you chasing a SUPPORT! You lose the teamfight and get reported!");
+    break;
+    case 'TANK':
+        console.log("WTF! Why are you wasting your time on a TANK! You lose the teamfight and get reported!");
+    break;
+    case 'BRUISER':
+        var skill = prompt("Not the best choice, but you can still win the fight. Are you more skillful than the BRUISER? (YES or NO)").toUpperCase;
+        var strong = prompt("Are you stronger than the BRUISER?").toUpperCase;
+        if (skill === 'YES' && strong === 'YES') {
+            console.log("You have killed their BRUISER and won the teamfight! Your teammates are calling you a Godlike!");
+        } else {
+            console.log("Oh no! You have died and one of your teammates rage quit...#surrender!");
+        }
+    break;
+    default:
+        console.log("That's not a champion! That's a minion! #noob");
+}
