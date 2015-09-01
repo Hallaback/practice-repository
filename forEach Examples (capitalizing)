@@ -1,0 +1,29 @@
+forEach Examples (capitalizing)
+
+var names = ["homer", "bart", "lisa", "marge"];
+
+function capitalize(arr) {
+  arr.forEach(function(el) {
+    console.log(el.toUpperCase());
+  });
+}
+
+var reverseCapitalize = function(arr){
+  arr.forEach(function(el){
+    console.log(el.toLowerCase());
+  });
+};
+
+capitalize(names);
+reverseCapitalize(names);
+
+capitalize(names);
+reverseCapitalize(names);
+
+function counter(arr) {
+  var count = 0;
+  arr.forEach(function(el){
+     count++; 
+              });
+  return count;
+}
