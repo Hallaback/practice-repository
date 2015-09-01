@@ -1,0 +1,28 @@
+String Padded with leading Zeros
+
+// This function returns a string padded with leading zeros
+
+function padZeros(num, totalLen) {
+  
+  var numStr = num.toString();
+  
+  var numZeros = totalLen - numStr.length;
+  
+  for (var i = 1; i <= numZeros; i++){
+    numStr = "0" + numStr;
+  }
+  
+  //Convert num to a string and store it to a new variable 'numStr' 
+  
+  // Calculate no. of zeros needed
+  
+  //Iterate for as many zeros as required and add them to 'numStr'
+  
+   
+   return numStr;
+}
+
+var result;
+console.log(padZeros(42,4)); // returns "0042"
+console.log(padZeros(42,2)); // returns "42"
+console.log(padZeros(5,4));  // returns "0005"
