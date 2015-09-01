@@ -1,0 +1,9 @@
+For loop & Push Method Example
+
+var oneArray = []; {
+var newArray = [];
+    for (i = 0; i <= 10; i++) {
+    oneArray.push(newArray + i);    
+    }
+}
+console.log(oneArray);
