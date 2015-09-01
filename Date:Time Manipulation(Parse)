@@ -1,0 +1,54 @@
+Date/Time Manipulation(Parse)
+
+var rightNow = new Date();
+console.log(rightNow);
+
+var rightFrigginNow = Date.now();
+console.log(rightFrigginNow);
+
+var nowParsed = Date.parse(rightNow);
+console.log(nowParsed);
+
+var tenThousandMSAgo = nowParsed - 10000;
+console.log(tenThousandMSAgo);
+
+var birthday = new Date('March 26, 1988');
+
+var my13thBirthday = new Date((1988+13), 2, 26);
+console.log(my13thBirthday);
+
+var now = Date.now();
+var yesterday = new Date(now - (1000 * 60 * 60 * 24));
+console.log(yesterday);
+
+var now = new Date();
+var day = (1000 * 60 * 60 * 24);
+var week = (1000 * 60 * 60 * 24 * 7);
+var month = (1000 * 60 * 60 * 24 * 31);
+
+function dateParser(date){
+  return Date.parse(date);
+}
+
+function yesterday(date) {
+var day = (1000 * 60 * 60 * 24);
+var y = new Date(date);
+ return new Date(y - day);
+}
+console.log(yesterday("August 31, 2015"));
+
+// var weekAgo = new Date(yesterday - week);
+
+function weekAgo(date){
+for (var i = 1; i <= 7; i++) {
+date = yesterday(date);
+}
+return date;
+}
+console.log(weekAgo("August 30, 2015"));
+
+function monthLater(date){
+var parsed = Date.parse(date);
+  return new Date(parsed + month);
+}
+console.log(monthLater("August 23, 2015"));
