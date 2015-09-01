@@ -1,0 +1,41 @@
+Do/while/for loops
+
+var heroPower = 20;
+var superHero = function(){
+    while (heroPower > 10){
+    heroPower --;
+    console.log("Powerful Hero incoming!");
+    heroPower <= 9 && heroPower >= 0;
+    console.log("Weak Hero incoming!");
+    }
+};
+superHero();
+
+do {
+        console.log("Strong Hero incoming!");
+    } while (heroPower < 10); {
+        console.log("Weak Hero incoming");
+    }
+
+
+for (var heroPower = 20; heroPower > 0; heroPower--){
+    if (heroPower > 10){
+        console.log("Powerful Hero incoming!");
+    } else {
+        console.log("Weak Hero incoming!");
+    }
+}
+
+var lifeSaver = false;
+var getToDaChoppa = function(){
+  // Write your do/while loop here!
+
+  do {
+      console.log("Come with me if you want to live!");
+  }
+    while (lifeSaver){
+      console.log("Who told you that you could eat my COOOKIES!");
+    }
+};
+
+getToDaChoppa();
