@@ -1,0 +1,4 @@
+Logging an Index of an element in an Array
+
+var languages = ["HTML", "CSS", "JavaScript", "Python", "Ruby"];
+console.log(languages[2]);
