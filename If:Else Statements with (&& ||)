@@ -1,0 +1,15 @@
+If/Else Statements with (&& ||)
+
+var hungry = true;
+var foodHere = true;
+var eat = function() {
+  // Add your if/else statement here!
+  if(hungry && foodHere) {
+      console.log("Yummy!");
+  } else if(hungry === false || foodHere === false) {
+      console.log("Are you sure");
+  } else {
+      console.log("Oh well!");
+  }
+};
+console.log(eat());
